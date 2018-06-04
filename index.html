@@ -1,60 +1,112 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-    <style>
-        #home1Sentence{
-            width: 300px;
-            float: left;
-            display: table;
-            margin: 0 auto;
-            text-align: center;
-        }
-        #text-line{
-            width: 80%;
-        }
-        #home1Img{
-            width: 30em;
-        }
-        @media ( max-width: 767px ) {
-            #home1Img{
-        }
-        }
-    </style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>About YuRi LEE</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+ 
 </head>
+ 
 <body>
+    <!--메뉴바-->
     <header>
-        <nav><a href="index.html">Home | </a><a href="index.html">App | </a><a href="index.html">Web | </a><a href="index.html"> Conact | </a> <a href="index.html"> Admin</a></nav>
-    </header>
-    <article>
-        <div id="home1Sentence">
-            <p>Lee Yu Ri</p>
-            <p>- Front End Developer -</p>
-            <hr id="text-line">
-            <p>Developers who realize</p>
-            <p>imagination to reality</p>
-            <img src="image/homeImg.png" id="home1Img">
+       <nav id="menu"><a href="index.html">Home | </a><a href="index.html">App | </a><a href="index.html">Web | </a><a href="index.html"> Conact | </a> <a href="index.html"> Admin</a></nav>
+   </header>
+
+   <!--1번째 슬라이드-->
+    <article class="container">
+        <div id="home">
+            <div id="home-sentence-div">
+                <div id="home-sentence">
+                    <p>Lee Yu Ri</p>
+                    <p>- Front End Developer -</p>
+                    <hr>
+                    <p>Developers who realize</p>
+                    <p>imagination to reality</p>
+                </div>
+            </div>
+            <div id="home-img-div"><img src="image/homeImg.png" id="main-img"></div>
         </div>
     </article>
-   
-    <footer>
-        <div>
-                copyright (c) 2018 YuriLe
-                <details>
-                        <summary>카페 미림</summary>
-                        <ul>
-                            <li>오픈 일 : 2018 4월 2일 화요일</li>
-                            <li>위 치 : 관악구 대학로</li>
-                            <li>전화번호 : 02.872.4071</li>          
-                        </ul>
-                    </details>
+
+    <!--2번째 슬라이드-->
+    <article class="container">
+        <div id="motto-text">
+            내가 가장 <span id="highlight">즐거운</span> 일을 하고<br>
+            싶은 <span id="highlight">개발자</span>입니다.
         </div>
-       
-    </footer>
+    </article>
+
+    <!--3번째 슬라이드-->
+    <article class="container" style="background-color: beige;" id="app">
+        <div id="app-header">
+            <div id="app-text">
+                APP
+            </div>
+            <button id="more-app-btn">MORE APP ></button>
+        </div>
+    </article>
+
+    
+    <article class="container" style="background-color: blue;">
+        I'm a div that stretches to the full height (100%) of the page.
+    </article>
+
+
+
+    <!--4번째 슬라이드-->
+    <article class="container">
+        <div id="app-header">
+            <div id="app-text">
+                APP
+            </div>
+            <button id="more-app-btn">MORE APP ></button>
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+            <div class="numbertext">여기는 텍스트이다!!!!</div>
+            <div style="width:100%; background-color: blue;height:100%" ></div>
+            <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">여기는 텍스트이다!!!!</div>
+            <div style="width:100%; background-color: blue; height:100%" ></div>
+            <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">여기는 텍스트이다!!!!</div>
+            <div style="width:100%; background-color: blue; height:100%" ></div>
+            <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+    </article>
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+            
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slides[slideIndex-1].style.display = "block";  
+}
+</script>
 </body>
 </html>
