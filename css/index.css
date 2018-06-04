@@ -82,11 +82,12 @@ hr{
     margin-top: 3px;
 }
 #app-header{
-    padding-left: 1em;
-    padding-right: 1em;
     padding-top: 2em;
     position: absolute;
+    left: 1em;
+    right: 1em;
     z-index: 1;
+    overflow: hidden;
 }
 
 /*----------------*/
@@ -95,7 +96,8 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  width: 100%;
+  overflow: hidden;
   position: relative;
   margin: auto;
   height: 100%;
