@@ -112,9 +112,9 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: #606060;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 2.5em;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
@@ -127,18 +127,18 @@ img {vertical-align: middle;}
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+    color: #60606067;
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+  color: #606060;
+  font-size: 1.5em;
   position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+  bottom: 11%;
+  text-align: left;
+  display: inline-block;
+  right: 20%;
 }
 
 /* Number text (1/3 etc) */
@@ -173,8 +173,50 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
+/*------글길-------*/
+.sim-button{
+	line-height: 2.7em;
+	text-align: center;
+	margin: auto;
+	margin-top: 2em;
+	width: 9.5em;
+	cursor: pointer;
+	background-color: #88ACFF;
+	box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.13);
+    outline: none;
+    position: absolute;
+    bottom: 7%;
+    right: 9%;
+    
+}
+.button1 {
+	color: #FFF;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	border: 1px solid #88ACFF;
+    font-size: 1em;
+}
+.button1:hover {
+	background-color: #FFF;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;	
+	color: #88ACFF;
+}
 
-/*---------------------*/
+#gulegil-phone{
+    width: 23em;
+    height: auto;
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+}
+
+#content-box{
+    position: absolute;
+}
 
 
 
