@@ -135,10 +135,10 @@ img {vertical-align: middle;}
   color: #606060;
   font-size: 1.5em;
   position: absolute;
-  bottom: 11%;
+  bottom: 0;
   text-align: left;
   display: inline-block;
-  right: 20%;
+  right: 0;
 }
 
 /* Number text (1/3 etc) */
@@ -174,7 +174,7 @@ img {vertical-align: middle;}
 }
 
 /*------글길-------*/
-.sim-button{
+.sim-button, .todol-button, .oh-button{
 	line-height: 2.7em;
 	text-align: center;
 	margin: auto;
@@ -189,7 +189,7 @@ img {vertical-align: middle;}
     right: 9%;
     
 }
-.button1 {
+.button1, .todol-btn, .oh-btn {
 	color: #FFF;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
@@ -198,7 +198,7 @@ img {vertical-align: middle;}
 	border: 1px solid #88ACFF;
     font-size: 1em;
 }
-.button1:hover {
+.button1:hover, .todol-btn:hover, .oh-btn:hover {
 	background-color: #FFF;
 	-webkit-border-radius: 25px;
 	-moz-border-radius: 25px;
@@ -206,21 +206,107 @@ img {vertical-align: middle;}
 	color: #88ACFF;
 }
 
-#gulegil-phone{
-    width: 23em;
-    height: auto;
-    position: absolute;
-    bottom: 10%;
-    left: 25%;
+#gulegil-phone, #todols-phone{
+    width: auto;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2.5%;
+    margin-left: -4%;
 }
 
 #content-box{
     position: absolute;
 }
+#gulegil-box,#todols-box{
+    width: 55em;
+    height: 65%;
+    bottom: 13%;
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%);
+}
+/*---------Todols-----*/
+#todols-main{
+    position: absolute;
+    left: 1.25em;
+    top: 10%;
+    z-index: -1;
+    width: auto;
+    height: 80%;
+
+}
+
+.todol-button{
+	background-color: #FFD1FF;
+    
+}
+.todol-btn {
+	color: #FFF;
+	border: 1px solid #FFD1FF;
+}
+.todol-btn:hover {
+	background-color: #FFF;
+	color: #FFD1FF;
+}
+
+#todols-phone{
+    margin-top: 1%;
+    margin-left: -2%;
+}
+
+/*-------ohdomitory-------*/
+#ohdomitory-main{
+    position: absolute;
+    left: 0.5em;
+    top: 12.3%;
+    z-index: -1;
+    width: auto;
+    height: 79.2%;
+}
+.oh-button{
+	background-color: #96b5c3;
+    
+}
+.oh-btn {
+	color: #FFF;
+	border: 1px solid #96b5c3;
+}
+.oh-btn:hover {
+	background-color: #FFF;
+	color: #96b5c3;
+}
+
+
 
 
 
     @media only screen and (max-width: 55em) {
+        #gulegil-phone{
+            height: 78%;
+            width: auto;
+            text-align: center;
+            margin:  0 auto;
+            display: block;
+        }
+        #gulegil-box{
+            width: 80%;
+        }
+        .text {
+            width: 100%;
+            left: 1em;
+            padding-top: 1em;
+        }
+        #todols-main{
+            height: 62%;
+            width: auto;
+            text-align: center;
+            margin:  0 auto;
+            display: block;
+            position: relative;
+            top: -70%;
+            left: -0%;
+        }
 /* For mobile phones: */
     #home-sentence-div{
         width: 100%;
@@ -261,6 +347,11 @@ img {vertical-align: middle;}
         background-color: #ffffff;
     }
 }
+@media only screen and (max-width: 43em) {
+    .text {
+        font-size: 1.2em;
+     }
+}
 @media only screen and (max-width: 30em) {
     #home-sentence{
         width: 100%;
@@ -272,6 +363,7 @@ img {vertical-align: middle;}
     #main-img{
         width: 100%;
     }
+    
 }
 @media only screen and (max-width: 375px) {
     #home-sentence{
