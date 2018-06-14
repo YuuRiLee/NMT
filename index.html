@@ -4,14 +4,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>About YuRi LEE</title>
 <link rel="stylesheet" type="text/css" href="css/index.css">
- 
+<link rel="stylesheet" type="text/css" href="css/header.css">
 </head>
  
 <body>
     <!--메뉴바-->
     <header>
-       <nav id="menu"><a href="index.html">Home | </a><a href="index.html">App | </a><a href="index.html">Web | </a><a href="index.html"> Conact | </a> <a href="index.html"> Admin</a></nav>
-   </header>
+        <nav class="menu">
+            <a href="index.html" data-hover="Home">Home</a>&nbsp; | &nbsp;
+            <a href="app.html" data-hover="App">App</a>&nbsp; | &nbsp;
+            <a href="#" data-hover="Web">Web</a>&nbsp; | &nbsp;
+            <a href="#" data-hover="Conact">Conact</a>&nbsp; | &nbsp;
+            <a href="#" data-hover="Admin">Admin</a>
+            <hr class="menu-hr">
+        </nav>
+    </header>
 
    <!--1번째 슬라이드-->
     <article class="container">
@@ -20,7 +27,7 @@
                 <div id="home-sentence">
                     <p>Lee Yu Ri</p>
                     <p>- Front End Developer -</p>
-                    <hr>
+                    <hr id="image-hr">
                     <p>Developers who realize</p>
                     <p>imagination to reality</p>
                 </div>
@@ -45,7 +52,7 @@
             <div id="app-text">
                 APP
             </div>
-            <button id="more-app-btn">MORE APP ></button>
+            <button id="more-app-btn"><nav class="cl-effect-5"><a href="app.html">MORE APP ></a></nav></button>
         </div>
         <div class="slideshow-container">
 
@@ -118,7 +125,7 @@
             <div id="app-text">
                 WEB
             </div>
-            <button id="more-app-btn">MORE WEB ></button>
+            <button id="more-app-btn"><a href="web.html">MORE WEB ></a></button>
         </div>
         <div class="slideshow-container">
 

@@ -1,0 +1,40 @@
+.menu-hr{
+    width: 95%;
+    margin-top: 0.7em;
+}
+#menu-div{
+    padding-top: 0.7em;
+}
+a:link{
+    text-decoration: none;
+}
+.menu{
+    position: fixed;
+    background-color: #FFF;
+    width: 100%;
+    z-index: 3;
+    text-align: center;
+    padding-top: 0.7em;
+}
+.menu a {
+	color: rgba(115,160,255,0.7);
+	font-weight: 700;
+	text-shadow: none;
+}
+
+.menu a::before {
+	color: #606060;
+	content: attr(data-hover);
+	position: absolute;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.menu a:hover::before,
+.menu a:focus::before {
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9);
+	opacity: 0;
+}
