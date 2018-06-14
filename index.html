@@ -39,7 +39,7 @@
 
 
 
-    <!--4번째 슬라이드-->
+    <!--3번째 슬라이드-->
     <article class="container">
         <div id="app-header">
             <div id="app-text">
@@ -53,6 +53,7 @@
                 <div style="width:100%; background-image: url('image/글길bg.png');height:100%" ></div>
                 <div id="gulegil-box">
                     <img src="image/Galaxy.png" id="gulegil-phone">
+                    <img src="image/guelgil.jpg" id="guelgil-main">
                     <div class="text">
                         <h3>글길</h3>
                         의미로 단어를 찾는 세상에 없던 역발상 단어사전<br>
@@ -65,28 +66,29 @@
             <div class="mySlides fade">
                 <div style="width:100%; background-image: url('image/oh.png');height:100%" ></div>
                 <div id="gulegil-box">
-                    <img src="image/Galaxy.png" id="gulegil-phone">
+                    <img src="image/iphone.png" id="todols-phone">
                     <img src="image/ohdomitory.jpg" id="ohdomitory-main">
                     <div class="text">
                         <h3>오몇점</h3>
                         미림 기숙사 디지털화 프로젝트!<br>
-                        지금 구글 플레이스토어에서 다운받으세요
+                        지금 ios와 Android 스토어에서 다운받으세요
                     </div>
                 </div>
                 <button id="gulegil-info" class="oh-button oh-btn" >자세히 보기</button>
             </div>
 
             <div class="mySlides fade">
-                <div style="width:100%; background-image: url('image/글길bg.png');height:100%" ></div>
+                <div style="width:100%; background-image: url('image/guelgil.png');height:100%" ></div>
                 <div id="gulegil-box">
                     <img src="image/Galaxy.png" id="gulegil-phone">
+                    <img src="image/haengbook.jpg" id="haengbook-main">
                     <div class="text">
                         <h3>행복</h3>
                         행북하면 행복해<br>
                         여행의 처음부터 끝까지 기록해주는 나만의 여행 책
                     </div>
                 </div>
-                <button id="gulegil-info" class="sim-button button1" >자세히 보기</button>
+                <button id="gulegil-info" class="ha-button ha-btn" >자세히 보기</button>
             </div>
 
             <div class="mySlides fade">
@@ -111,8 +113,73 @@
     </article>
 
     <!--WEB 슬라이드-->
-    
+    <article class="container">
+        <div id="app-header">
+            <div id="app-text">
+                WEB
+            </div>
+            <button id="more-app-btn">MORE WEB ></button>
+        </div>
+        <div class="slideshow-container">
 
+            <div class="mySlides2 fade">
+                <div style="width:100%; background-image: url('image/ohWeb.png');height:100%" ></div>
+                <div class="web-box">
+                    <img src="image/iMac.png" id="oh-web">
+                    <img src="image/ohMain.png" id="web-main">
+                    <div class="web-text">
+                        <h3>오몇점 관리자 사이트</h3>
+                        미림 기숙사 디지털화 프로젝트!<br>
+                        사감 선생님만을 위한 관리자 페이지
+                    </div>
+                </div>
+                <button id="gulegil-info" class="ohWeb-button ohWeb-btn" >자세히 보기</button>
+            </div>
+
+            <div class="mySlides2 fade">
+                <div style="width:100%; background-image: url('image/mirim.png');height:100%" ></div>
+                <div class="web-box">
+                    <img src="image/iMac.png" id="oh-web">
+                    <img src="image/mirimMain.png" id="web-main">
+                    <div class="web-text">
+                        <h3>MIRIM  MEISTER</h3>
+                        학교에 대한 정보를 영어로?<br>
+                        미림에 대한 필요한 정보를 보는 가장 간단한 웹사이트
+                    </div>
+                </div>
+                <button id="gulegil-info" class="mirimWeb-button mirimWeb-btn" >자세히 보기</button>
+            </div>
+
+            <div class="mySlides2 fade">
+                <div style="width:100%; background-image: url('image/3522.png');height:100%" ></div>
+                <div class="web-box">
+                    <img src="image/iMac.png" id="oh-web">
+                    <img src="image/35Main.png" id="web-main">
+                    <div class="web-text">
+                        <h3>3-5반 웹사이트</h3>
+                        3-5반을 위한 3-반에 의한 사이트!<br>
+                        지금 바로 접속하세요!
+                    </div>
+                </div>
+                <button id="gulegil-info" class="web35-button web35-btn" >자세히 보기</button>
+            </div>
+
+
+
+            <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+        </div>
+    </article>
+
+    <!--마지막 슬라이드-->
+    <article class="container">
+        <div id="motto-text">
+            Do you want to contact me?
+            <img src="image/sent-mail.svg"  height="50" width="50"><br>
+            <button class="mail-button mail-btn" >Messege Me</button>
+        </div>
+    </article>
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -130,6 +197,24 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";  
 }
+
+var slideIndex2 = 1;
+showSlides2(slideIndex2);
+            
+function plusSlides2(n) {
+    showSlides2(slideIndex2 += n);
+}
+function showSlides2(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides2");
+    if (n > slides.length) {slideIndex2 = 1}    
+    if (n < 1) {slideIndex2 = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slides[slideIndex2-1].style.display = "block";  
+}
+
 </script>
 </body>
 </html>

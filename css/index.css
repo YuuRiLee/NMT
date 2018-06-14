@@ -91,7 +91,7 @@ hr{
 }
 
 /*----------------*/
-.mySlides {display: none; height: 100%;}
+.mySlides,.mySlides2 {display: none; height: 100%;}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -174,7 +174,7 @@ img {vertical-align: middle;}
 }
 
 /*------글길-------*/
-.sim-button, .todol-button, .oh-button{
+.sim-button, .todol-button, .oh-button, .ha-button, .ohWeb-button, .mirimWeb-button, .web35-button{
 	line-height: 2.7em;
 	text-align: center;
 	margin: auto;
@@ -189,7 +189,7 @@ img {vertical-align: middle;}
     right: 9%;
     
 }
-.button1, .todol-btn, .oh-btn {
+.button1, .todol-btn, .oh-btn, .ha-btn, .ohWeb-btn, .mirimWeb-btn, .web35-btn, .mail-btn {
 	color: #FFF;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
@@ -198,7 +198,7 @@ img {vertical-align: middle;}
 	border: 1px solid #88ACFF;
     font-size: 1em;
 }
-.button1:hover, .todol-btn:hover, .oh-btn:hover {
+.button1:hover, .todol-btn:hover, .oh-btn:hover, .ha-btn:hover,.ohWeb-btn:hover, .mirimWeb-btn:hover, .web35-btn:hover, .mail-btn:hover {
 	background-color: #FFF;
 	-webkit-border-radius: 25px;
 	-moz-border-radius: 25px;
@@ -258,27 +258,151 @@ img {vertical-align: middle;}
 /*-------ohdomitory-------*/
 #ohdomitory-main{
     position: absolute;
+    left: 1em;
+    top: 12.3%;
+    z-index: -1;
+    width: auto;
+    height: 75%;
+}
+.oh-button{
+	background-color: #fcd15a;
+    
+}
+.oh-btn {
+	color: #FFF;
+	border: 1px solid #fcd15a;
+}
+.oh-btn:hover {
+	background-color: #FFF;
+	color: #fcd15a;
+}
+/*--------------*/
+#guelgil-main{
+    position: absolute;
     left: 0.5em;
     top: 12.3%;
     z-index: -1;
     width: auto;
     height: 79.2%;
 }
-.oh-button{
-	background-color: #96b5c3;
+#haengbook-main{
+    position: absolute;
+    left: 0.8em;
+    top: 12.3%;
+    z-index: -1;
+    width: auto;
+    height: 80.5%;
+}
+
+.ha-button{
+	background-color: #f7961d;
     
 }
-.oh-btn {
+.ha-btn {
 	color: #FFF;
-	border: 1px solid #96b5c3;
+	border: 1px solid #f7961d;
 }
-.oh-btn:hover {
+.ha-btn:hover {
 	background-color: #FFF;
-	color: #96b5c3;
+	color: #f7961d;
+}
+/*-----WEb----*/
+#oh-web{
+    width: auto;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2.5%;
+    margin-left: -4%;
+}
+.web-box{
+    width: auto;
+    height: 67%;
+    bottom: 13%;
+    position: absolute;
+    left:35%;
+    transform:translateX(-50%);
+}
+.web-text {
+    color: #606060;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    display: inline-block;
+    width: 80%;
+    margin-left: 2em;
+  }
+  #web-main{
+    position: absolute;
+    left: 0em;
+    top: 9.5%;
+    z-index: -1;
+    width: auto;
+    height: 62%;
+  }
+  
+.ohWeb-button{
+	background-color: #96B5C3;
+    
+}
+.ohWeb-btn {
+	color: #FFF;
+	border: 1px solid #96B5C3;
+}
+.ohWeb-btn:hover {
+	background-color: #FFF;
+	color: #96B5C3;
 }
 
 
+.mirimWeb-button{
+	background-color: #008256;
+    
+}
+.mirimWeb-btn {
+	color: #FFF;
+	border: 1px solid #008256;
+}
+.mirimWeb-btn:hover {
+	background-color: #FFF;
+	color: #008256;
+}
 
+
+.web35-button{
+	background-color: #A5A5A5;
+    
+}
+.web35-btn {
+	color: #FFF;
+	border: 1px solid #A5A5A5;
+}
+.web35-btn:hover {
+	background-color: #FFF;
+	color: #A5A5A5;
+}
+
+
+.mail-button{
+	background-color: #707070;
+	text-align: center;
+    line-height: 2.2em;
+	margin-top: 1em;
+	width: 8em;
+	cursor: pointer;
+	box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.13);
+    outline: none;
+    font-size: 0.8em;
+}
+.mail-btn {
+	color: #FFF;
+	border: 1px solid #707070;
+}
+.mail-btn:hover {
+	background-color: #FFF;
+	color: #707070;
+}
 
 
     @media only screen and (max-width: 55em) {
