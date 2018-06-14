@@ -26,25 +26,38 @@
 #todols{
     border: 2px solid #C48CC4;
 }
-/* Common style */
+
+#mirimWeb{
+	border: 2px solid #ffe431;
+}
+
+#web35{
+	border: 2px solid #008156;
+}
+
+
 .grid figure {
 	position: relative;
 	float: left;
 	overflow: hidden;
 	margin: 10px 1%;
-	max-width: 17em;
-	max-height: 17em;
+	width: 17em;
+	height: 17em;
 	text-align: center;
     cursor: pointer;
     border-radius: 15px;
-    box-shadow: 0px 6px 11px rgba(0, 0, 0, 0.13);
-}
-.grid figure img {
-	position: relative;
+	box-shadow: 0px 6px 11px rgba(0, 0, 0, 0.13);
 	display: block;
-	min-height: 100%;
-	max-width: 100%;
+}
+.grid figure img{
+  height: 100%;
+  width: 100%;
 	opacity: 0.7;
+}
+/* Common style */
+.grid figure img.landscape {
+	max-width: auto;
+  	max-height: 100%;
 }
 
 .grid figure figcaption {
