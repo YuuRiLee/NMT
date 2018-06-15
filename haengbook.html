@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/detail.css">
     <link rel="stylesheet" type="text/css" href="css/headerText.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Noto+Serif|Roboto" rel="stylesheet">
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script  src="js/detail.js"></script>
 </head>
@@ -43,36 +44,72 @@
             <div class="my_div">
                 <div class="old-text">WHAT IS THIS ?<span class='dash'></span></div>
                 <div class="new-text">행북은 여행 목록을 카드 형식으로<br>쉽게 메인 화면에서 보여주며<br>
-                    앨범,경비 관리를 간편히 할 수 있는<br>여행 관리 앱입니다!
+                    앨범과 경비 관리를 간편히 할 수 있는<br>여행 관리 앱입니다!
                 </div>
             </div>
     </article>
 
+    <article class="container" >
+        <div id="phone-div">
+            <img src="image/Galaxy.png" id="detail-phone" onMouseOver="hide('hint','btn-div')">
+            <div class="btn-div" id="btn-div" >
+                <button class="left-btn" onclick="plusDivs(-1)"></button>
+                <button class="right-btn" onclick="plusDivs(1)"></button>
+            </div>
+            <div class="phone-slider" >
+                <img src="image/hint2.png" class="phone-image" id="hint" >
+                <img class="phone-slide fade" src="image/행북/메인.png" class="phone-image">
+                <img class="phone-slide fade" src="image/행북/1.jpg" class="phone-image">
+                <img class="phone-slide fade" src="image/행북/2.jpg" class="phone-image">
+                <img class="phone-slide fade" src="image/행북/3.jpg" class="phone-image">
+                <img class="phone-slide fade" src="image/행북/4.jpg" class="phone-image">
+                <img class="phone-slide fade" src="image/행북/5.jpg" class="phone-image">
+                <img class="phone-slide fade" src="image/행북/갤러리.png" class="phone-image">
+                <img class="phone-slide fade" src="image/행북/영수증.jpg" class="phone-image">
+              
+            </div>
+        </div>
+        
+        
+    </article>
+
+
+
     <article class="container">
-        <div id="motto-text">
-            <img src="image/Galaxy.png" id="gulegil-phone">
+        <div class="subheading">
+            <p class="bottom-title">A tool for use</p>
+            Android Studio<br><br>
+            <p class="bottom-title">A spoken language</p>
+            JAVA<br><br>
+            <p class="bottom-title">Assigned work</p>
+            <span class="underline--magical">Front End</span> Development<br><br>
+            <p class="bottom-title">Project Github Link</p>
+            <a href="https://github.com/zoripong/haengbook"><span class="underline--magical">https://github.com/zoripong/haengbook</span></a>
         </div>
     </article>
 
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
 
-    <article class="container">
-            
-            <h2 class="subheading">
-                Wow this one  is super incredibly cool, and this
-                <span class="underline--magical">one is on Multiple Lines!</span>
-                I wish I had found this like thirty projects ago when I was representing the lollipop guild.
-            </h2>
-    </article>
-
-    
-
-    <article class="container">
-        <div id="motto-text">
-            내가 가장 <span id="highlight">즐거운</span> 일을 하고<br>
-            싶은 <span id="highlight">개발자</span>입니다.
-        </div>
-    </article>
-    
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("phone-slide");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = 1}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+  function hide(id,id2) {
+    document.getElementById(id).style.display = "none";  
+    document.getElementById(id2).style.zIndex=11;
+  }
+</script>
 </body>
 </html>

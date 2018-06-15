@@ -25,10 +25,12 @@
 	color: #f7961d;
 	white-space: nowrap;
 	cursor: default;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
 	height: 3em;
 	top: 0;               
     bottom: 0;            
-    left: 1em;              
+    left: 1.5em;              
     right: 0;             
     margin: auto;
     position: absolute;
@@ -104,31 +106,34 @@
 .my_div {
 	transition: all 700ms ease-in-out;
 	text-align: center;
-	height: 10em;
+	height: 12em;
     top: 0;               
     bottom: 0;            
     left: 0;              
     right: 0;             
     margin: auto;
-    position: absolute;
+		position: absolute;
   }
   .old-text,
   .new-text {
 	display: block;
 	overflow: hidden;
 	transition: all 500ms ease-in-out;
+	color: rgb(49, 49, 49);
   }
   .old-text {
 	height: auto;
 	opacity: 1;
 	width: auto;
 	font-size: 3em;
+	font-family: 'Noto Serif','Libre Baskerville', serif;
   }
   .new-text {
 	height: 0;
 	opacity: 0;
 	width: 0;
-	font-size: 1.5em;
+	font-size: 1.75em;
+  line-height: 165%;
   }
   .my_div:hover .old-text {
 	height: 0px;
