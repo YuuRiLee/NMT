@@ -1,0 +1,142 @@
+/* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
+:root {
+	--animation-delay: 1s;
+	--duration: 800ms;
+	--iterations: 1;
+}
+/* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
+
+
+
+.reveal-text,
+.reveal-text::after {
+	animation-delay: var(--animation-delay);
+	animation-iteration-count: var(--iterations);
+	animation-duration: var(--duration);
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.reveal-text {
+	position: relative;
+	display: block;
+	user-select: none;
+	animation-name: reveal-text;
+	color: #f7961d;
+	white-space: nowrap;
+	cursor: default;
+	height: 3em;
+	top: 0;               
+    bottom: 0;            
+    left: 1em;              
+    right: 0;             
+    margin: auto;
+    position: absolute;
+}
+.reveal-text::after {
+	content: "";
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #f7961d;
+	transform: scaleX(0);
+	transform-origin: 0 50%;
+	pointer-events: none;
+	animation-name: revealer-text;
+}
+	
+
+
+
+@keyframes reveal-text {
+	from {
+		clip-path: inset(0 100% 0 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+
+@keyframes revealer-text {
+	
+	0%, 50% {
+		transform-origin: 0 50%;
+	}
+	
+	60%, 100% {
+		transform-origin: 100% 50%;		
+	}
+
+	
+	60% {
+		transform: scaleX(1);
+	}
+	
+	100% {
+		transform: scaleX(0);
+	}
+}
+/*-----blink text---*/
+    
+.dash {
+	display: inline-block;
+	height: 0.1em;
+	width: 0.5em;
+	background-color: #f7961d;
+	animation: blink .5s infinite linear;
+  }
+  
+  @keyframes blink {
+	0% {
+	  opacity: 1;
+	}
+	99% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+.my_div {
+	transition: all 700ms ease-in-out;
+	text-align: center;
+	height: 10em;
+    top: 0;               
+    bottom: 0;            
+    left: 0;              
+    right: 0;             
+    margin: auto;
+    position: absolute;
+  }
+  .old-text,
+  .new-text {
+	display: block;
+	overflow: hidden;
+	transition: all 500ms ease-in-out;
+  }
+  .old-text {
+	height: auto;
+	opacity: 1;
+	width: auto;
+	font-size: 3em;
+  }
+  .new-text {
+	height: 0;
+	opacity: 0;
+	width: 0;
+	font-size: 1.5em;
+  }
+  .my_div:hover .old-text {
+	height: 0px;
+	opacity: 0;
+	width: 0px;
+  }
+  .my_div:hover .new-text {
+	height: auto;
+	opacity: 1;
+	width: auto;
+  }
