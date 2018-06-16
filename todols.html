@@ -31,7 +31,7 @@
             <div id="title">
                 <div class="reveal-text" id="todols-reveal-text">
                     ToDols<br>
-                    - Today IDols -
+                    투돌
                 </div>
             </div>
             
@@ -43,8 +43,10 @@
     <article class="container">
             <div class="my_div">
                 <div class="old-text">WHAT IS THIS ?<span class='dash' id="todols-dash"></span></div>
-                <div class="new-text">글길은 의미로 단어를 찾는 사전으로<br>기존 사전 앱과는 달리<br>
-                    단어를 검색하면 해당하는 단어를<br>의미로 가진 단어들이 나오는 앱입니다!
+                <div class="new-text">ToDols는 Today IDols의 줄인말로<br>
+                    자신이 좋아하는 연예인의 스케줄을<br>
+                    팬들과 함께 공유하고<br>
+                    놓친 방송 일정들을 다시 볼 수 있는 앱입니다!
                 </div>
             </div>
     </article>
@@ -58,15 +60,15 @@
             </div>
             <div class="phone-slider" >
                 <img src="image/hint2.png" class="phone-image" id="hint" >
-                <img class="phone-slide fade" src="image/글길/1.png" class="phone-image">
-                <img class="phone-slide fade" src="image/글길/tutorial1.jpg" class="phone-image">
-                <img class="phone-slide fade" src="image/글길/tutorial2.jpg" class="phone-image">
-                <img class="phone-slide fade" src="image/글길/tutorial3.jpg" class="phone-image">
-                <img class="phone-slide fade" src="image/글길/tutorial4.jpg" class="phone-image">
-                <img class="phone-slide fade" src="image/글길/2.jpg" class="phone-image">
-                <img class="phone-slide fade" src="image/글길/3.jpg" class="phone-image">
-                <img class="phone-slide fade" src="image/글길/4.png" class="phone-image">
-                <img class="phone-slide fade" src="image/글길/5.png" class="phone-image">
+                <img class="phone-slide fade" src="image/Todols/1.png" class="phone-image">
+                <img class="phone-slide fade" src="image/Todols/2.png" class="phone-image">
+                <img class="phone-slide fade" src="image/Todols/3.png" class="phone-image">
+                <img class="phone-slide fade" src="image/Todols/3-5.png" class="phone-image">
+                <img class="phone-slide fade" src="image/Todols/4.png" class="phone-image">
+                <img class="phone-slide fade" src="image/Todols/5.png" class="phone-image">
+                <img class="phone-slide fade" src="image/Todols/6.png" class="phone-image">
+                <img class="phone-slide fade" src="image/Todols/7.png" class="phone-image">
+                <img class="phone-slide fade" src="image/Todols/8.png" class="phone-image">
               
             </div>
         </div>
@@ -77,38 +79,13 @@
 
 
     <article class="container">
-        <div class="subheading">
+        <div class="subheading" id="todols-subheading">
             <p class="bottom-title">A tool for use</p>
-            Adobe XD<br><br>
+            <span class="underline--magical" id="todols-underline--magical">Adobe XD</span><br><br>
             <p class="bottom-title">Assigned work</p>
-            <span class="underline--magical" id="todols-underline--magical">Design</span> | Planning<br><br>
-            <p class="bottom-title">Project Github Link</p>
-            <a href="https://github.com/zoripong/GeulGil"><span class="underline--magical" id="todols-underline--magical">https://github.com/zoripong/GeulGil</span></a>
+            <span class="underline--magical" id="todols-underline--magical">Design</span> | Planning
         </div>
     </article>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("phone-slide");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = 1}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-  function hide(id,id2) {
-    document.getElementById(id).style.display = "none";  
-    document.getElementById(id2).style.zIndex=11;
-  }
-</script>
+    <script  src="js/detailSlider.js"></script>
 </body>
 </html>

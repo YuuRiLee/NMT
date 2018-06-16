@@ -43,8 +43,11 @@
     <article class="container">
             <div class="my_div">
                 <div class="old-text">WHAT IS THIS ?<span class='dash' id="ohdomitory-dash"></span></div>
-                <div class="new-text">글길은 의미로 단어를 찾는 사전으로<br>기존 사전 앱과는 달리<br>
-                    단어를 검색하면 해당하는 단어를<br>의미로 가진 단어들이 나오는 앱입니다!
+                <div class="new-text">
+                    오몇점은 기숙사생들을 위한 앱으로<br>
+                    기존에 종이로 전달되던 공지사항, 외박일지, 청소구역을<br>
+                    간편하게 앱으로 알림받고<br>
+                    외박인증도 QR코드로 간편하게 할 수 있는 앱입니다!
                 </div>
             </div>
     </article>
@@ -58,16 +61,14 @@
             </div>
             <div class="phone-slider" >
                 <img src="image/hint2.png" class="phone-image" id="hint" >
-                <img class="phone-slide fade" src="image/글길/1.png" class="phone-image">
-                <img class="phone-slide fade" src="image/글길/tutorial1.jpg" class="phone-image">
-                <img class="phone-slide fade" src="image/글길/tutorial2.jpg" class="phone-image">
-                <img class="phone-slide fade" src="image/글길/tutorial3.jpg" class="phone-image">
-                <img class="phone-slide fade" src="image/글길/tutorial4.jpg" class="phone-image">
-                <img class="phone-slide fade" src="image/글길/2.jpg" class="phone-image">
-                <img class="phone-slide fade" src="image/글길/3.jpg" class="phone-image">
-                <img class="phone-slide fade" src="image/글길/4.png" class="phone-image">
-                <img class="phone-slide fade" src="image/글길/5.png" class="phone-image">
-              
+                <img class="phone-slide fade" src="image/오몇점/1.jpg" class="phone-image">
+                <img class="phone-slide fade" src="image/오몇점/2.jpg" class="phone-image">
+                <img class="phone-slide fade" src="image/오몇점/3.jpg" class="phone-image">
+                <img class="phone-slide fade" src="image/오몇점/4.jpg" class="phone-image">
+                <img class="phone-slide fade" src="image/오몇점/5.jpg" class="phone-image">
+                <img class="phone-slide fade" src="image/오몇점/11.jpg" class="phone-image">
+                <img class="phone-slide fade" src="image/오몇점/12.jpg" class="phone-image">
+                <img class="phone-slide fade" src="image/오몇점/13.jpg" class="phone-image">
             </div>
         </div>
         
@@ -79,40 +80,16 @@
     <article class="container">
         <div class="subheading">
             <p class="bottom-title">A tool for use</p>
-            Android Studio | Xcode | Adobe XD<br><br>
+            Android Studio | Xcode | Github<br><br>
             <p class="bottom-title">A spoken language</p>
-            JAVA | Swift | HTML5 | CSS3 | Javascript | jQuery<br><br>
+            JAVA | Swift<br><br>
             <p class="bottom-title">Assigned work</p>
-            Web <span class="underline--magical" id="ohdomitory-underline--magical">Design</span> | 
             <span class="underline--magical" id="ohdomitory-underline--magical">Front End</span> Development
             <br><br>
             <p class="bottom-title">Project Github Link</p>
             <a href="https://github.com/zoripong/OhDormitory"><span class="underline--magical" id="ohdomitory-underline--magical">https://github.com/zoripong/OhDormitory</span></a>
         </div>
     </article>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("phone-slide");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = 1}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-  function hide(id,id2) {
-    document.getElementById(id).style.display = "none";  
-    document.getElementById(id2).style.zIndex=11;
-  }
-</script>
+    <script  src="js/detailSlider.js"></script>
 </body>
 </html>

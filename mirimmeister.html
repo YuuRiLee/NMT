@@ -7,11 +7,11 @@
     <title>About YuRi LEE</title>
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/detail.css">
+    <link rel="stylesheet" type="text/css" href="css/detailWeb.css">
     <link rel="stylesheet" type="text/css" href="css/headerText.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Noto+Serif|Roboto" rel="stylesheet">
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script  src="js/detail.js"></script>
-    
 </head>
 <body>
     <header>
@@ -27,12 +27,12 @@
     <article class="container">
         <div id="header-div">
             <div id="header-img-div">
-                <img src="image/haengbook.jpg" id="header-img">
+                <img src="image/mirimMain.png" id="header-img">
             </div>
             <div id="title">
-                <div class="reveal-text">
-                    HAENGBOOK<br>
-                    행북
+                <div class="reveal-text" id="mirim-reveal-text">
+                    MIRIM MEISTER<br>
+                    미림여자정보과학고
                 </div>
             </div>
             
@@ -43,31 +43,30 @@
 
     <article class="container">
             <div class="my_div">
-                <div class="old-text">WHAT IS THIS ?<span class='dash'></span></div>
-                <div class="new-text">행북은 여행 목록을 카드 형식으로<br>쉽게 메인 화면에서 보여주며<br>
-                    앨범과 경비 관리를 간편히 할 수 있는<br>여행 관리 앱입니다!
+                <div class="old-text">WHAT IS THIS ?<span class='dash' id="mirim-dash"></span></div>
+                <div class="new-text">
+                    오몇점 관리자 사이트는 사감 선생님을 위한 웹 사이트로<br>
+                    종이로 전달하던 공지사항, 외박일지, 청소구역을<br>
+                    간편하게 웹으로 공지하고<br>
+                    학생들을 관리하는 웹 사이트입니다!
                 </div>
             </div>
     </article>
 
     <article class="container" >
         <div id="phone-div">
-            <img src="image/Galaxy.png" id="detail-phone" onMouseOver="hide('hint','btn-div')">
+            <img src="image/iMac.png" id="detail-phone" onMouseOver="hide('hint','btn-div')">
             <div class="btn-div" id="btn-div" >
                 <button class="left-btn" onclick="plusDivs(-1)"></button>
                 <button class="right-btn" onclick="plusDivs(1)"></button>
             </div>
             <div class="phone-slider" >
-                <img src="image/hint2.png" class="phone-image" id="hint" >
-                <img class="phone-slide fade" src="image/행북/메인.png" class="phone-image">
-                <img class="phone-slide fade" src="image/행북/1.jpg" class="phone-image">
-                <img class="phone-slide fade" src="image/행북/2.jpg" class="phone-image">
-                <img class="phone-slide fade" src="image/행북/3.jpg" class="phone-image">
-                <img class="phone-slide fade" src="image/행북/4.jpg" class="phone-image">
-                <img class="phone-slide fade" src="image/행북/5.jpg" class="phone-image">
-                <img class="phone-slide fade" src="image/행북/갤러리.png" class="phone-image">
-                <img class="phone-slide fade" src="image/행북/영수증.jpg" class="phone-image">
-              
+                <img src="image/intro.png" class="phone-image" id="hint" >
+                <img class="phone-slide fade" src="image/mirimMain.png" class="phone-image">
+                <img class="phone-slide fade" src="image/mirim/2.png" class="phone-image">
+                <img class="phone-slide fade" src="image/mirim/3.png" class="phone-image">
+                <img class="phone-slide fade" src="image/mirim/4.png" class="phone-image">
+                <img class="phone-slide fade" src="image/mirim/5.png" class="phone-image">
             </div>
         </div>
         
@@ -77,17 +76,17 @@
 
 
     <article class="container">
-        <div class="subheading">
+        <div class="subheading" id="mirim-subheading">
             <p class="bottom-title">A tool for use</p>
-            Android Studio<br><br>
-            <p class="bottom-title">A spoken language</p>
-            JAVA<br><br>
+            Adobe XD | Wix<br><br>
             <p class="bottom-title">Assigned work</p>
-            <span class="underline--magical">Front End</span> Development<br><br>
-            <p class="bottom-title">Project Github Link</p>
-            <a href="https://github.com/zoripong/haengbook"><span class="underline--magical">https://github.com/zoripong/haengbook</span></a>
+            Web <span class="underline--magical" id="mirim-underline--magical">Design</span> | 
+            Planning
+            <br><br>
+            <p class="bottom-title">Web Site Link</p>
+            <a href="https://yurilee9696.wixsite.com/e-mirim"><span class="underline--magical" id="mirim-underline--magical">https://yurilee9696.wixsite.com/e-mirim</span></a>
         </div>
     </article>
-<script  src="js/detailSlider.js"></script>
+    <script  src="js/detailSlider.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
 <title>About YuRi LEE</title>
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <link rel="stylesheet" type="text/css" href="css/header.css">
+<link href="https://fonts.googleapis.com/css?family=Bad+Script|La+Belle+Aurore" rel="stylesheet">
 </head>
  
 <body>
@@ -24,11 +25,12 @@
         <div id="home">
             <div id="home-sentence-div">
                 <div id="home-sentence">
-                    <p>Lee Yu Ri</p>
-                    <p>- Front End Developer -</p>
+                    <p style="font-size: 1.5em">Lee Yu Ri</p>
+                    <p style="margin-top: -1em">- Front End Developer -</p>
                     <hr id="image-hr">
-                    <p>Developers who realize</p>
-                    <p>imagination to reality</p>
+                    <div style="font-family: 'La Belle Aurore','Bad Script', cursive; line-height: 130%">Developers who realize<br>
+                        imagination to reality
+                    </div>
                 </div>
             </div>
             <div id="home-img-div"><img src="image/homeImg.png" id="main-img"></div>
@@ -51,7 +53,7 @@
             <div id="app-text">
                 APP
             </div>
-            <button id="more-app-btn"><nav class="cl-effect-5"><a href="app.html">MORE APP ></a></nav></button>
+            <button id="more-app-btn"><a href="app.html" id="more">MORE APP ></a></button>
         </div>
         <div class="slideshow-container">
 
@@ -66,7 +68,7 @@
                         지금 구글 플레이스토어에서 다운받으세요
                     </div>
                 </div>
-                <button id="gulegil-info" class="sim-button button1" >자세히 보기</button>
+                <button id="gulegil-info" class="sim-button button1" onclick="location.href='geulgil.html' ">자세히 보기</button>
             </div>
 
             <div class="mySlides fade">
@@ -80,7 +82,7 @@
                         지금 ios와 Android 스토어에서 다운받으세요
                     </div>
                 </div>
-                <button id="gulegil-info" class="oh-button oh-btn" >자세히 보기</button>
+                <button id="gulegil-info" class="oh-button oh-btn" onclick="location.href='ohdomitory.html' ">자세히 보기</button>
             </div>
 
             <div class="mySlides fade">
@@ -94,7 +96,7 @@
                         여행의 처음부터 끝까지 기록해주는 나만의 여행 책
                     </div>
                 </div>
-                <button id="gulegil-info" class="ha-button ha-btn" >자세히 보기</button>
+                <button id="gulegil-info" class="ha-button ha-btn" onclick="location.href='haengbook.html' ">자세히 보기</button>
             </div>
 
             <div class="mySlides fade">
@@ -108,7 +110,7 @@
                         걱정하지 마세요! Todols에서 팬들과 공유하세요!
                     </div>
                 </div>
-                <button id="gulegil-info" class="todol-button todol-btn" >자세히 보기</button>
+                <button id="gulegil-info" class="todol-button todol-btn" onclick="location.href='todols.html' ">자세히 보기</button>
             </div>
 
 
@@ -139,7 +141,7 @@
                         사감 선생님만을 위한 관리자 페이지
                     </div>
                 </div>
-                <button id="gulegil-info" class="ohWeb-button ohWeb-btn" >자세히 보기</button>
+                <button id="gulegil-info" class="ohWeb-button ohWeb-btn" onclick="location.href='ohdomitoryAdmin.html' ">자세히 보기</button>
             </div>
 
             <div class="mySlides2 fade">
@@ -153,7 +155,7 @@
                         미림에 대한 필요한 정보를 보는 가장 간단한 웹사이트
                     </div>
                 </div>
-                <button id="gulegil-info" class="mirimWeb-button mirimWeb-btn" >자세히 보기</button>
+                <button id="gulegil-info" class="mirimWeb-button mirimWeb-btn" onclick="location.href='mirimmeister.html' ">자세히 보기</button>
             </div>
 
             <div class="mySlides2 fade">
@@ -167,7 +169,7 @@
                         지금 바로 접속하세요!
                     </div>
                 </div>
-                <button id="gulegil-info" class="web35-button web35-btn" >자세히 보기</button>
+                <button id="gulegil-info" class="web35-button web35-btn" onclick="location.href='web35.html' ">자세히 보기</button>
             </div>
 
 
@@ -183,7 +185,7 @@
         <div id="motto-text">
             Do you want to contact me?
             <img src="image/sent-mail.svg"  height="50" width="50"><br>
-            <button class="mail-button mail-btn" >Messege Me</button>
+            <button class="mail-button mail-btn" onclick="location.href='conact.html' ">Messege Me</button>
         </div>
     </article>
 <script>

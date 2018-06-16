@@ -1,6 +1,6 @@
 /* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
 :root {
-	--animation-delay: 1s;
+	--animation-delay: 0.5s;
 	--duration: 800ms;
 	--iterations: 1;
 }

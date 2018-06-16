@@ -1,0 +1,53 @@
+#header-div{
+
+    display: flex;
+}
+#header-img{
+    height: auto;
+    width: 100%;
+}
+#header-img-div{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-items: center;
+}
+  
+.phone-slide,.btn-div, #hint{
+    height: 43.5%;
+    top: -18%;               
+    left: 0;              
+}
+.btn-div{
+    width: 45em;
+}
+
+/*------text color change----*/
+#web35-reveal-text{
+    color: #008156;
+}
+#web35-reveal-text::after, #web35-dash{
+    background-color: #008156;
+}
+#web35-underline--magical {
+    background-image: linear-gradient(120deg, #008156 0%, #008156 100%);
+}
+
+#mirim-reveal-text{
+    color: #ffe431;
+}
+ #mirim-dash{
+    background-color: #ffe431;
+}
+#mirim-reveal-text::after
+,#mirim-underline--magical {
+    background-image: linear-gradient(120deg, #ffe431 0%, #ffe431 100%);
+}
+#mirim-subheading{
+    height: 14.5em;
+}

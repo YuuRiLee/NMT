@@ -1,6 +1,7 @@
 html,body{
     margin: 0px;
     padding: 0px;
+    color: #444444;
 }
 html, body, .container {height:100%; margin:0; box-sizing:border-box; -moz-box-sizing:border-box;}
 article{
@@ -185,4 +186,7 @@ article{
 #todols-reveal-text::after
 ,#todols-underline--magical {
     background-image: linear-gradient(120deg, #FAD0C4 0%, #FFD1FF 100%);
+}
+#todols-subheading{
+    height: 9em;
 }

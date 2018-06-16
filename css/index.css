@@ -1,6 +1,7 @@
 html,body{
     margin: 0px;
     padding: 0px;
+    color: #444444;
 }
 html, body, .container {height:100%; margin:0; box-sizing:border-box; -moz-box-sizing:border-box;}
 article{
@@ -76,6 +77,13 @@ article{
     outline: none;
     margin-top: 3px;
 }
+#more-app-btn a:link, #more-app-btn a:visited{
+    color: #707070;
+}
+
+#more-app-btn a:hover {
+    color: #73A0FF;
+}
 #app-header{
     padding-top: 2em;
     position: absolute;
@@ -127,7 +135,7 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .text {
-  color: #606060;
+  color: #444444;
   font-size: 1.5em;
   position: absolute;
   bottom: 0;
