@@ -62,6 +62,10 @@ article{
     font-size: 1.2em;
     color: #73A0FF;
 }
+#motto-text a:link, #motto-text a:visited{
+    color: #444444;
+    font-size: 0.9em;
+}
 #app-text{
     display: inline-block;
     font-size: 1.3em;
