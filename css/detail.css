@@ -12,7 +12,7 @@ article{
     position: relative;
 }
 #header-div{
-    width: 50%;
+    width: 50rem;
     display: inline-block;
     height: 60%;
     top: 0;               
@@ -28,24 +28,25 @@ article{
     border-radius: 15px;
 }
 #header-img-div{
-    width: 50%;
     height: 100%;
     display: inline-block;
     text-align: center;
     padding-right: 1em;
 }
 #title{
-    width: 50%;
+    width: 8em;
     height: 100%;
     display: inline-block;
     position: absolute;
-    padding-left: 1em;
     right: 0;
     color: #f7961d;
-    font-size: 3em;
+    font-size: 3rem;
     text-align: center;
 }
 
+#title span{
+	font-size:2rem;
+}
   
   .subheading {
     font-size: 1.5em;
@@ -190,3 +191,45 @@ article{
 #todols-subheading{
     height: 9em;
 }
+#video-article{
+    text-align: center;
+    height: auto;
+}
+#video-tag{
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+#function-header{
+    font-family: 'Noto Serif', serif;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #73A0FF;
+}
+#function-text{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #444444;
+    display: inline;
+}
+#function-text{
+    max-width: 60rem;
+    display: block;
+    margin: 0 auto;
+    padding: 0 2em;
+    height: 23em;
+    top: 0;               
+    bottom: 0;            
+    left: 0;              
+    right: 0;             
+    margin: auto;
+    position: absolute;
+}
+.verticalLine {
+    border-left: 3px solid #73A0FF;
+  }
+
+
+
+ 

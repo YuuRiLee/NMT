@@ -508,6 +508,7 @@ img {vertical-align: middle;}
         background-color: #ffffff;
     }
 }
+
 @media only screen and (max-width: 43em) {
     .text {
         font-size: 1.2em;
