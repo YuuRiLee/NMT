@@ -1,0 +1,98 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+#conact{
+    background-color: #F2F2F2;
+    width: 40em;
+    height: 20em;
+    top: 0;               
+    bottom: 0;            
+    left: 0;              
+    right: 0;             
+    margin: auto;
+    position: absolute;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=password]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+#fname{
+    border-radius: 7px;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#conact-div{
+    width: 70%;
+    height: 9em;
+    top: 0;               
+    bottom: 0;            
+    left: 0;              
+    right: 0;             
+    margin: auto;
+    position: absolute;
+}
+#conact-text{
+    padding-bottom: 0.5em;
+    color: #606060;
+}
+#button-div{
+    text-align: center;
+}
+.mail-button{
+	background-color: #707070;
+	text-align: center;
+    line-height: 2.5em;
+	margin-top: 1em;
+	width: 8em;
+	cursor: pointer;
+	box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.13);
+    outline: none;
+    font-size: 0.8em;
+}
+.mail-btn {
+	color: #FFF;
+    border: 1px solid #707070;
+}
+.mail-btn:hover {
+	background-color: #FFF;
+	color: #707070;
+}
+.mail-btn {
+	color: #FFF;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	border: 1px solid #707070;
+    font-size: 1em;
+}
+.mail-btn:hover {
+	background-color: #FFF;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;	
+	color: #707070;
+}
+@media only screen and (max-width: 65em) {
+    #conact{
+        width: 90%;
+    }
+    #conact-div{
+        width: 80%;
+    }
+}

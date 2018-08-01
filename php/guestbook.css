@@ -1,0 +1,142 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#insert{
+    background-color: #F2F2F2;
+    width: 60em;
+    height: 25em;
+    margin: 0 auto;
+    margin-top: 5em;
+    padding-top: 2.5em;
+}
+#insert-div{
+    width: 70%;
+    margin: 0 auto;
+    height: 20em;
+    padding-top: 2.5em;
+}
+input[type=text], input[type=password], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+#name-div,#pass-div{
+    width: 46%;
+    display: inline-block;
+}
+#pass-div{
+    float: right;
+}
+textarea{
+    width: 100%;
+}
+#insert-content{
+    width: 100%;
+    padding:12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#button-div{
+    text-align: center;
+}
+.mail-button{
+	background-color: #707070;
+	text-align: center;
+    line-height: 2.5em;
+	margin-top: 1em;
+	width: 8em;
+	cursor: pointer;
+	box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.13);
+    outline: none;
+    font-size: 0.8em;
+}
+.mail-btn {
+	color: #FFF;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	border: 1px solid #707070;
+    font-size: 1em;
+}
+.mail-btn:hover {
+	background-color: #FFF;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;	
+	color: #707070;
+}
+#list{
+    padding-top: 2em;
+    top: 30em;          
+    margin: 0 auto;
+}
+.list-table{
+    background-color: #F2F2F2;
+    width: 60em;
+    margin: 0 auto;
+    padding: 0.8em 0.8em 1em 1em;
+    margin-top: -0.7em;
+}
+.edit,.del{
+    width: 3.5em;
+    float: right;
+}
+.no,.name,.pass,.date{
+    font-size: 0.9em;
+    display: inline;
+}
+td>.mail-btn{
+    font-size: 0.75rem;
+    box-shadow: 0px 0px 0px #00000000;
+    width: 100%;
+}
+.edit>.mail-btn {
+    background: #FFF;
+	color: #707070;
+    border: 1px solid #707070;
+}
+.edit>.mail-btn:hover {
+	background-color: #707070;
+    color: #FFF;
+}
+.page-number{
+    color: #707070;
+    padding: 0.2rem 0.5rem;
+    background-color: #F2F2F2;
+    margin: 0.4em;
+    width: 0.75em;
+    height: 0.75em;
+    font-size: 0.85rem;
+}
+.page-number:hover{
+    color: #FFF;
+    background-color: #707070;
+}
+.page-div{
+    width: 60em;
+    height: 1em;
+    margin: 0 auto;
+    padding-bottom: 3em;
+}
+@media only screen and (max-width: 65em) {
+    #guestbook, #list-table{
+        width: 90%;
+    }
+    #insert-div{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 35em) {
+    #name-div,#pass-div{
+        float: clear;
+        display: block;
+        width: 100%;
+    }
+}

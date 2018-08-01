@@ -1,0 +1,21 @@
+#guestbook{
+    background-color: #F2F2F2;
+    width: 60em;
+    height: 70%;
+    top: 0;               
+    bottom: 0;            
+    left: 0;              
+    right: 0;             
+    margin: auto;
+    position: absolute;
+}
+#insert-div{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+@media only screen and (max-width: 65em) {
+    #guestbook{
+        width: 90%;
+    }
+}
