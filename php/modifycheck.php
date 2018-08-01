@@ -33,7 +33,7 @@
         <form method="post" action="<?=$_SERVER[PHP_SELF]?>?id=<?=$_GET[id]?>&mode=modify">
             <input type="password" id="fname" name="pass">
             <div id="button-div">
-                <input type="submit" class="mail-button mail-btn">
+                <input type="submit" class="mail-button mail-btn" value="EDIT"">
             </div>
             
           </form>
