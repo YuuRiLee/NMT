@@ -26,6 +26,9 @@ input[type=text], select, textarea {
     margin-bottom: 16px;
     resize: vertical;
 }
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 500px white inset;
+}
 #subject,#fname{
     border-radius: 7px;
 }

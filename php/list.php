@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About YuRi LEE</title>
     <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <link rel="stylesheet" type="text/css" href="guestbook.css">
 </head>
   <body>
@@ -16,7 +17,6 @@
             <a href="../app.html" data-hover="App">App</a>&nbsp; | &nbsp;
             <a href="../web.html" data-hover="Web">Web</a>&nbsp; | &nbsp;
             <a href="../conact.html" data-hover="Conact">Conact</a>&nbsp; | &nbsp;
-            <a href="../photo.html" data-hover="Photo">Photo</a>&nbsp; | &nbsp;
             <a href="../php/list.php" data-hover="GuestBook">GuestBook</a>
             <hr class="menu-hr">
         </nav>
@@ -80,6 +80,9 @@
     echo "</div>";
     ?>
     </section>
+    <footer>
+        <p>&copy; 2018 Lee Yu Ri &nbsp; | &nbsp; CONACT - yurilee9696@gmail.com &nbsp; | &nbsp; TEL - 010-3390-9696<p>
+    </footer>
   </body>
 
 </html>
