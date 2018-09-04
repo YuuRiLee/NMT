@@ -31,9 +31,7 @@
         }
       }
   
-      for (let i = 0; i < el.length; i++) {
-        el[i].style.height = `${counter}px`;
-      }
+      
     }
   
     // CHECK IF AN ELEMENT IS IN VIEWPORT
